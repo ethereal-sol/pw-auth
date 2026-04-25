@@ -4,25 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "eth/evolution/a3/v3**"
-      - "eth/evolution/1.5s/b1-v1**"
-      - "eth/evolution/1.5b/1**"
-      - "eth/evolution/1.5b/2**"
-      - "eth/evolution/1.5b/3**"
-      - "eth/evolution/1.5b/4**"
-      - "eth/evolution/1.5b/5**"
-      - "eth/evolution/1.5b/5/v2**"
-      - "eth/evolution/1.5r/1**"
-      - "eth/evolution/1.5r/2.1**"
-      - "eth/evolution/1.5r/2**"
-      - "eth/evolution/private/1.5b4**"
-      - "eth/evolution/private/1.5b5**"
-      - "eth/evolution/private/1.5r1**"
-      - "eth/evolution/private/1.5r2**"
-      - "eth/evolution/private/1.5r/2.1**"
-      - "eth/evolution/private/1.5r/2.2**"
-      - "eth/evolution/private/1.5r/2.3**"
-      - "eth/evolution/private/1.5r2b**"
+      - "eth/evolution/private/1.5r/2.4**"
       - ".github/workflows/sign-and-deploy.yml"
   workflow_dispatch:
 
@@ -58,27 +40,7 @@ jobs:
           set -x
 
           DIRS=(
-            "eth/evolution/a3/v3"
-            "eth/evolution/1.5s/b1-v1"
-            "eth/evolution/1.5b/1"
-            "eth/evolution/1.5b/2"
-            "eth/evolution/1.5b/3"
-            "eth/evolution/1.5b/4"
-            "eth/evolution/1.5b/5"
-            "eth/evolution/1.5b/5/v2"
-            "eth/evolution/1.5r/1"
-            "eth/evolution/1.5r/2"
-            "eth/evolution/1.5r/2.1"
-            "eth/evolution/private/1.5b4"
-            "eth/evolution/private/1.5b5"
-            "eth/evolution/private/1.5r1"
-            "eth/evolution/private/1.5r2"
-            "eth/evolution/private/1.5r/2.1"
-            "eth/evolution/private/1.5r/2.2"
-            "eth/evolution/private/1.5r/2.3"
-            "eth/evolution/private/1.5r2b"
-            "eth/harmony/a3/v3"
-            "eth/pudj/a3/v3"
+            "eth/evolution/private/1.5r/2.4"
           )
 
           sign_one () {
