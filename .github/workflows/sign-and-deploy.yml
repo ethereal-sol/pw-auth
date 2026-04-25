@@ -1,0 +1,123 @@
+name: Sign config and deploy Pages
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "eth/evolution/a3/v3**"
+      - "eth/evolution/1.5s/b1-v1**"
+      - "eth/evolution/1.5b/1**"
+      - "eth/evolution/1.5b/2**"
+      - "eth/evolution/1.5b/3**"
+      - "eth/evolution/1.5b/4**"
+      - "eth/evolution/1.5b/5**"
+      - "eth/evolution/1.5b/5/v2**"
+      - "eth/evolution/1.5r/1**"
+      - "eth/evolution/1.5r/2.1**"
+      - "eth/evolution/1.5r/2**"
+      - "eth/evolution/private/1.5b4**"
+      - "eth/evolution/private/1.5b5**"
+      - "eth/evolution/private/1.5r1**"
+      - "eth/evolution/private/1.5r2**"
+      - "eth/evolution/private/1.5r/2.1**"
+      - "eth/evolution/private/1.5r/2.2**"
+      - "eth/evolution/private/1.5r/2.3**"
+      - "eth/evolution/private/1.5r2b**"
+      - ".github/workflows/sign-and-deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore private key
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "${{ secrets.ED25519_PRIV_PEM_B64 }}" | base64 -d > ed25519_priv.pem
+          chmod 600 ed25519_priv.pem
+
+      - name: Sign JSON files in multiple dirs
+        shell: bash
+        run: |
+          set -euo pipefail
+          trap 'rm -f ed25519_priv.pem' EXIT
+          trap 'echo "::error::Failed on line $LINENO"; exit 1' ERR
+          set -x
+
+          DIRS=(
+            "eth/evolution/a3/v3"
+            "eth/evolution/1.5s/b1-v1"
+            "eth/evolution/1.5b/1"
+            "eth/evolution/1.5b/2"
+            "eth/evolution/1.5b/3"
+            "eth/evolution/1.5b/4"
+            "eth/evolution/1.5b/5"
+            "eth/evolution/1.5b/5/v2"
+            "eth/evolution/1.5r/1"
+            "eth/evolution/1.5r/2"
+            "eth/evolution/1.5r/2.1"
+            "eth/evolution/private/1.5b4"
+            "eth/evolution/private/1.5b5"
+            "eth/evolution/private/1.5r1"
+            "eth/evolution/private/1.5r2"
+            "eth/evolution/private/1.5r/2.1"
+            "eth/evolution/private/1.5r/2.2"
+            "eth/evolution/private/1.5r/2.3"
+            "eth/evolution/private/1.5r2b"
+            "eth/harmony/a3/v3"
+            "eth/pudj/a3/v3"
+          )
+
+          sign_one () {
+            local f="$1"
+            local bin="$f.sig.bin"
+            local sig="$f.sig"
+
+            test -f "$f"
+
+            openssl pkeyutl -sign -rawin -inkey ed25519_priv.pem -in "$f" -out "$bin"
+            openssl base64 -A -in "$bin" -out "$sig"
+            rm -f "$bin"
+          }
+
+          for DIR in "${DIRS[@]}"; do
+            echo "Signing in: $DIR"
+            sign_one "$DIR/config.json"
+            sign_one "$DIR/ui.json"
+          done
+
+      - name: Debug tree
+        shell: bash
+        run: |
+          echo "=== Files that will be published (eth/) ==="
+          find eth -maxdepth 6 -type f -print
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: eth/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
