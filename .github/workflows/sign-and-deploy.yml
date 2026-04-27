@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "eth/evolution/private/1.5r/2.4**"
+      - "eth/evolution/1.5r/2.4**"
       - ".github/workflows/sign-and-deploy.yml"
   workflow_dispatch:
 
