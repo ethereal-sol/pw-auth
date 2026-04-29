@@ -1,7 +1,7 @@
 {
   "version": 2.4,
 
-  "allow_login": false,
+  "allow_login": true,
   "allow_heads": true,
   "allow_aim": true,
 
