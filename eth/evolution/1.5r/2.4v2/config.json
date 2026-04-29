@@ -1,11 +1,11 @@
 {
   "version": 2.4,
 
-  "allow_login": true,
+  "allow_login": false,
   "allow_heads": true,
   "allow_aim": true,
 
-  "deny_reason": "",
+  "deny_reason": "обновление в канале t.me/acheron_software",
   "heads_deny_reason": "",
   "aim_deny_reason": "",
 
