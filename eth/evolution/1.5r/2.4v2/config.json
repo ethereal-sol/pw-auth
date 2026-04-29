@@ -16,7 +16,7 @@
     "category_visible": true,
 
     "show_header": true,
-    "show_enable_checkbox": true,
+    "show_enable_checkbox": false,
     "show_bone_combo": true,
     "show_merge_checkbox": true,
     "show_global_slider": true,
@@ -24,12 +24,12 @@
 
     "header_text": {
       "en": "Bone Scaling",
-      "ru": "хуй костей"
+      "ru": "Масштабирование костей"
     },
 
     "enable_text": {
       "en": "Enable Expansion",
-      "ru": "не расширение"
+      "ru": "Включить расширение"
     },
 
     "target_bone_text": {
@@ -62,19 +62,19 @@
       "ru": "Масштаб по Z"
     },
 
-    "top_text": {
+    "_top_text": {
       "en": "idk",
       "ru": "хз"
     },
 
-    "bottom_text": {
+    "_bottom_text": {
       "en": "test",
       "ru": "тест"
     },
 
     "disabled_title": {
-      "en": "This feature is temporarily shitted by the server.",
-      "ru": "Данная функция временно ра сервером."
+      "en": "This feature is temporarily disabled by the server.",
+      "ru": "Данная функция временно отключена сервером."
     },
 
     "global_scale": {
@@ -105,7 +105,7 @@
 
     "buttons": [
       {
-        "visible": true,
+        "visible": false,
         "text": {
           "en": "uh",
           "ru": "tg"
@@ -113,7 +113,7 @@
         "url": "https://pastereal.t.me"
       },
       {
-        "visible": true,
+        "visible": false,
         "text": {
           "en": "site",
           "ru": "сайт"
