@@ -2,10 +2,10 @@
   "version": 2.4,
 
   "allow_login": true,
-  "allow_heads": true,
+  "allow_heads": false,
   "allow_aim": true,
 
-  "deny_reason": "",
+  "deny_reason": "lox",
   "heads_deny_reason": "",
   "aim_deny_reason": "",
 
