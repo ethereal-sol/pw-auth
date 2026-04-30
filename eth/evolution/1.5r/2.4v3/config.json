@@ -16,11 +16,11 @@
     "category_visible": true,
 
     "show_header": false,
-    "show_enable_checkbox": true,
-    "show_bone_combo": true,
-    "show_merge_checkbox": true,
-    "show_global_slider": true,
-    "show_axis_sliders": true,
+    "show_enable_checkbox": false,
+    "show_bone_combo": false,
+    "show_merge_checkbox": false,
+    "show_global_slider": false,
+    "show_axis_sliders": false,
 
     "header_text": {
       "en": "Bone Scaling",
