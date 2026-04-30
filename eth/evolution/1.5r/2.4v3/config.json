@@ -2,11 +2,11 @@
   "version": 2.4,
 
   "allow_login": true,
-  "allow_heads": true,
-  "allow_aim": true,
+  "allow_heads": false,
+  "allow_aim": false,
 
-  "deny_reason": "hah",
-  "heads_deny_reason": "",
+  "deny_reason": "",
+  "heads_deny_reason": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
   "aim_deny_reason": "",
 
   "kill_switch": false,
@@ -113,12 +113,12 @@
         "url": "https://pastereal.t.me"
       },
       {
-        "visible": false,
+        "visible": true,
         "text": {
-          "en": "site",
-          "ru": "сайт"
+          "en": "Purchase",
+          "ru": "Купить платку"
         },
-        "url": "https://ethereal.pw"
+        "url": "https://ethereal_private_bot"
       }
     ]
   }
