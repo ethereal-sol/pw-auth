@@ -2,7 +2,7 @@
   "version": 2.4,
 
   "allow_login": true,
-  "allow_heads": false,
+  "allow_heads": true,
   "allow_aim": false,
 
   "deny_reason": "",
@@ -15,7 +15,7 @@
   "heads_ui": {
     "category_visible": true,
 
-    "show_header": true,
+    "show_header": false,
     "show_enable_checkbox": true,
     "show_bone_combo": true,
     "show_merge_checkbox": true,
@@ -62,9 +62,9 @@
       "ru": "Масштаб по Z"
     },
 
-    "_to_text": {
-      "en": "idk",
-      "ru": "хз"
+    "top_text": {
+      "en": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
+      "ru": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте."
     },
 
     "_botto_text": {
