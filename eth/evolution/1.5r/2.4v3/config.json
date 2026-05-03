@@ -78,27 +78,27 @@
     },
 
     "global_scale": {
-      "min": 1,
-      "max": 2,
-      "default": 2
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_x": {
-      "min": 1,
-      "max": 2,
-      "default": 2
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_y": {
-      "min": 1,
-      "max": 2,
-      "default": 2
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_z": {
-      "min": 1,
-      "max": 2,
-      "default": 2
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "allowed_bones": [0, 1, 2, 3],
