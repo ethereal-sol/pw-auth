@@ -1,0 +1,21 @@
+{
+  "software_name": "Ethereal Private",
+  "subscribe_text": "Подпишись на наши Telegram-каналы:",
+  "button_left": "1",
+  "button_right": "2",
+
+  "strings": {
+    "ru": {
+      "loading.title": "loaded."
+    }
+  },
+
+  "runtime": {
+    "allow_access": true,
+    "force_close_menu": false,
+    "show_text": true,
+    "message": "",
+    "tg_left": "pastereal",
+    "tg_right": "ethereal_architectures"
+  }
+}
