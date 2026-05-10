@@ -13,9 +13,9 @@
     "software_name": "ethereal",
     "message": "",
     "channels": [
-      { "title": "pastereal", "url": "pastereal" },
-      { "title": "eth architectures", "url": "ethereal_architectures" },
-      { "title": "acheron", "url": "acheron_software" }
+      { "title": "Основной канал", "url": "pastereal" },
+      { "title": "Второй канал", "url": "ethereal_architectures" },
+      { "title": "Третий канал", "url": "acheron_software" }
     ]
   }
 }
