@@ -1,0 +1,125 @@
+{
+  "version": 2.4,
+
+  "allow_login": true,
+  "allow_heads": true,
+  "allow_aim": false,
+
+  "deny_reason": "",
+  "heads_deny_reason": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
+  "aim_deny_reason": "",
+
+  "kill_switch": false,
+  "refresh_sec": 15,
+
+  "heads_ui": {
+    "category_visible": true,
+
+    "show_header": false,
+    "show_enable_checkbox": false,
+    "show_bone_combo": false,
+    "show_merge_checkbox": false,
+    "show_global_slider": false,
+    "show_axis_sliders": false,
+
+    "header_text": {
+      "en": "Bone Scaling",
+      "ru": "Масштабирование костей"
+    },
+
+    "enable_text": {
+      "en": "Enable Expansion",
+      "ru": "Включить расширение"
+    },
+
+    "target_bone_text": {
+      "en": "Targe Bone",
+      "ru": "Целевая кость"
+    },
+
+    "merge_text": {
+      "en": "Uniform Scale",
+      "ru": "Единый масштаб"
+    },
+
+    "global_scale_text": {
+      "en": "Global Scale",
+      "ru": "Общий масштаб"
+    },
+
+    "scale_x_text": {
+      "en": "Scale X-Axis",
+      "ru": "Масштаб по X"
+    },
+
+    "scale_y_text": {
+      "en": "Scale Y-Axis",
+      "ru": "Масштаб по Y"
+    },
+
+    "scale_z_text": {
+      "en": "Scale Z-Axis",
+      "ru": "Масштаб по Z"
+    },
+
+    "top_text": {
+      "en": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
+      "ru": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте."
+    },
+
+    "_botto_text": {
+      "en": "test",
+      "ru": "тест"
+    },
+
+    "disabled_title": {
+      "en": "This feature is temporarily disabled by the server.",
+      "ru": "Данная функция временно отключена сервером."
+    },
+
+    "global_scale": {
+      "min": 0,
+      "max": 0,
+      "default": 0
+    },
+
+    "scale_x": {
+      "min": 0,
+      "max": 0,
+      "default": 0
+    },
+
+    "scale_y": {
+      "min": 0,
+      "max": 0,
+      "default": 0
+    },
+
+    "scale_z": {
+      "min": 0,
+      "max": 0,
+      "default": 0
+    },
+
+    "allowed_bones": [0, 1, 2, 3],
+
+    "buttons": [
+      {
+        "visible": false,
+        "text": {
+          "en": "uh",
+          "ru": "tg"
+        },
+        "url": "https://pastereal.t.me"
+      },
+      {
+        "visible": true,
+        "text": {
+          "en": "Купить платку",
+          "ru": "Купить платку"
+        },
+        "url": "https://t.me/ethereal_private_bot"
+      }
+    ]
+  }
+}
