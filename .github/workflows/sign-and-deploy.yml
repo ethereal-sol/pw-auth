@@ -4,6 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
+      - "eth/rise/1.5r/2.4.3**"
       - "eth/rise/private/1.5r/2.4**"
       - "eth/rise/private/1.5r/2.5**"
       - "eth/evolution/private/1.5r/2.4**"
@@ -46,6 +47,7 @@ jobs:
           set -x
 
           DIRS=(
+            "eth/rise/1.5r/2.4.3"
             "eth/rise/private/1.5r/2.4"
             "eth/rise/private/1.5r/2.5"
             "eth/evolution/private/1.5r/2.4"
