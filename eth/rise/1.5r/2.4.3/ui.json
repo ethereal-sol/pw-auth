@@ -1,6 +1,6 @@
 {
   "software_name": "Ethereal 1.5r (2.4.3)",
-  "subscribe_text": "подпишись на наши телеграм каналы",
+  "subscribe_text": "подпишись на наши телеграм каналы чтобы софт работал!",
   "button_left": "Основной канал",
   "button_right": "Запасной канал",
 
@@ -13,9 +13,9 @@
     "software_name": "ethereal",
     "message": "",
     "channels": [
-      { "title": "Основной канал", "url": "pastereal" },
+      { "title": "Основной канал", "url": "acheron_software" },
       { "title": "Второй канал", "url": "ethereal_architectures" },
-      { "title": "Третий канал", "url": "acheron_software" }
+      { "title": "Третий канал", "url": "pastereal" }
     ]
   }
 }
