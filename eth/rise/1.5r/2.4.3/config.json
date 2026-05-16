@@ -15,12 +15,12 @@
   "heads_ui": {
     "category_visible": true,
 
-    "show_header": true,
-    "show_enable_checkbox": true,
-    "show_bone_combo": true,
-    "show_merge_checkbox": true,
-    "show_global_slider": true,
-    "show_axis_sliders": true,
+    "show_header": false,
+    "show_enable_checkbox": false,
+    "show_bone_combo": false,
+    "show_merge_checkbox": false,
+    "show_global_slider": false,
+    "show_axis_sliders": false,
 
     "header_text": {
       "en": "Bone Scaling",
@@ -63,8 +63,8 @@
     },
 
     "top_text": {
-      "en": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
-      "ru": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте."
+      "en": "Халява окончена. Купить платную версию с этими же хитбоксами за дешево можно в боте.",
+      "ru": "Халява окончена. Купить платную версию с этими же хитбоксами за дешево можно в боте."
     },
 
     "_botto_text": {
@@ -78,27 +78,27 @@
     },
 
     "global_scale": {
-      "min": 1,
-      "max": 10,
-      "default": 1
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_x": {
-      "min": 1,
-      "max": 10,
-      "default": 1
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_y": {
-      "min": 1,
-      "max": 10,
-      "default": 1
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "scale_z": {
-      "min": 1,
-      "max": 10,
-      "default": 1
+      "min": 0,
+      "max": 0,
+      "default": 0
     },
 
     "allowed_bones": [0, 1, 2, 3],
@@ -113,7 +113,7 @@
         "url": "https://pastereal.t.me"
       },
       {
-        "visible": false,
+        "visible": true,
         "text": {
           "en": "Купить платку",
           "ru": "Купить платку"
