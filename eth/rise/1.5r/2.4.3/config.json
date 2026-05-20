@@ -1,11 +1,11 @@
 {
   "version": 2.4,
 
-  "allow_login": true,
+  "allow_login": false,
   "allow_heads": true,
   "allow_aim": false,
 
-  "deny_reason": "",
+  "deny_reason": "Тех работы. Пока го в чат: @ethereals_chat",
   "heads_deny_reason": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
   "aim_deny_reason": "",
 
