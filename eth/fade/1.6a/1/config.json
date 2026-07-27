@@ -1,11 +1,11 @@
 {
   "version": 1.6,
 
-  "allow_login": false,
+  "allow_login": true,
   "allow_heads": true,
   "allow_aim": false,
 
-  "deny_reason": "лох ебанный а ну съебался",
+  "deny_reason": "",
   "heads_deny_reason": "Халява окончена. Купить платную версию с этими же хитбоксами можно в боте.",
   "aim_deny_reason": "",
 
