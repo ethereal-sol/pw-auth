@@ -15,12 +15,12 @@
   "heads_ui": {
     "category_visible": true,
 
-    "show_header": false,
-    "show_enable_checkbox": false,
-    "show_bone_combo": false,
-    "show_merge_checkbox": false,
-    "show_global_slider": false,
-    "show_axis_sliders": false,
+    "show_header": true,
+    "show_enable_checkbox": true,
+    "show_bone_combo": true,
+    "show_merge_checkbox": true,
+    "show_global_slider": true,
+    "show_axis_sliders": true,
 
     "header_text": {
       "en": "Bone Scaling",
@@ -78,27 +78,27 @@
     },
 
     "global_scale": {
-      "min": 0,
-      "max": 0,
-      "default": 0
+      "min": 1,
+      "max": 10,
+      "default": 1
     },
 
     "scale_x": {
-      "min": 0,
-      "max": 0,
-      "default": 0
+      "min": 1,
+      "max": 10,
+      "default": 1
     },
 
     "scale_y": {
-      "min": 0,
-      "max": 0,
-      "default": 0
+      "min": 1,
+      "max": 10,
+      "default": 1
     },
 
     "scale_z": {
-      "min": 0,
-      "max": 0,
-      "default": 0
+      "min": 1,
+      "max": 10,
+      "default": 1
     },
 
     "allowed_bones": [0, 1, 2, 3],
@@ -113,7 +113,7 @@
         "url": "https://pastereal.t.me"
       },
       {
-        "visible": true,
+        "visible": false,
         "text": {
           "en": "Купить платку",
           "ru": "Купить платку"
