@@ -16,6 +16,7 @@ on:
       - "eth/evolution/1.5r/2.4v3**"
       - "eth/fade/1.6a/1**"
       - "eth/fade/1.6a/2**"
+      - "eth/leo/3.4/1.6a/2**"
       - ".github/workflows/sign-and-deploy.yml"
   workflow_dispatch:
 
@@ -63,6 +64,7 @@ jobs:
             "eth/evolution/1.5r/2.4v3"
             "eth/fade/1.6a/1"
             "eth/fade/1.6a/2"
+            "eth/leo/3.4/1.6a/2"
           )
 
           sign_one () {
