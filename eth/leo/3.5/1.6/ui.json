@@ -1,0 +1,20 @@
+{
+  "software_name": "ethereal 1.6a (p2)",
+  "subscribe_text": "не пропусти обновы, сабнись на тг каналы!",
+  "button_left": "основной телеграм канал",
+  "button_right": "второй тг канал",
+
+  "strings": { "ru": { "loading.title": "hi from nyashka <3" } },
+
+  "runtime": {
+    "allow_access": true,
+    "force_close_menu": false,
+    "show_text": true,
+    "software_name": "ethereal",
+    "message": "",
+    "channels": [
+      { "title": "основной телеграм канал", "url": "pastereal" },
+      { "title": "второй тг канал", "url": "ethereal_architectures" }
+    ]
+  }
+}
