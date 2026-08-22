@@ -1,11 +1,11 @@
 {
   "version": 1.6,
 
-  "allow_login": true,
+  "allow_login": false,
   "allow_heads": true,
   "allow_aim": false,
 
-  "deny_reason": "",
+  "deny_reason": "Заходи в тг канал, чит пока в детекте, скоро обнова",
   "heads_deny_reason": "",
   "aim_deny_reason": "",
 
