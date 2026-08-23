@@ -20,6 +20,7 @@ on:
       - "eth/leo/3.4/1.6a/3**"
       - "eth/leo/3.5/1.6**"
       - "eth/leo/3.5/1.6.1**"
+      - "eth/leo/3.5/1.6.2**"
       - ".github/workflows/sign-and-deploy.yml"
   workflow_dispatch:
 
@@ -71,6 +72,7 @@ jobs:
             "eth/leo/3.4/1.6a/3"
             "eth/leo/3.5/1.6"
             "eth/leo/3.5/1.6.1"
+            "eth/leo/3.5/1.6.2"
           )
 
           sign_one () {
