@@ -14,7 +14,8 @@
     "message": "",
     "channels": [
       { "title": "основной телеграм канал", "url": "pastereal" },
-      { "title": "второй тг канал", "url": "ethereal_architectures" }
+      { "title": "второй тг канал", "url": "ethereal_architectures" },
+      { "title": "щитпост канал", "url": "ethereal_architectures_shitpost" }
     ]
   }
 }
