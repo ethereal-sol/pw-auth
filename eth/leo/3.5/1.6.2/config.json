@@ -1,11 +1,11 @@
 {
   "version": 1.6,
 
-  "allow_login": true,
+  "allow_login": false,
   "allow_heads": true,
   "allow_aim": false,
 
-  "deny_reason": "",
+  "deny_reason": "Скоро обнова софта на лео 3.5, подписывайся на канал",
   "heads_deny_reason": "",
   "aim_deny_reason": "",
 
